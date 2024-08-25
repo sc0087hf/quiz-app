@@ -6,7 +6,6 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\PlayController;
 
-
 //プレイヤー画面
 Route::get('/', [PlayController::class, 'top'])->name('top');
 Route::prefix('categoris/{categoryId}')->name('categories.')->group(function() {
